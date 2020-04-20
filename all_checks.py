@@ -35,7 +35,7 @@ def check_no_network():
 	"""Returns True if it fails to resolve google URL, false otherwise"""
 	try:
 		socket.gethostbyname("www.google.com")
-		# la funcion gethostbyname raises an exception on failure, por esoel try/except
+		# la funcion gethostbyname raises an exception on failure, por eso el try/except
 		return False
 	except:
 		return True
